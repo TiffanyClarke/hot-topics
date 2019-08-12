@@ -1,0 +1,198 @@
+/*General Styling for Mobile*/
+body {
+    background-color: #BCCC5E;
+}
+
+h1 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    margin: auto;
+    background-image: url(../img/header-img.jpg);
+    width: 100%;
+    height: 375px;
+    background-repeat: none;
+    color: #1446B3;
+    font-size: 4.5rem;
+    padding: 42px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    text-align: center;
+    color: #000;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Blinker', sans-serif;
+    font-size: 0.75rem; 
+    line-height: 1.4;
+}
+
+/*Nav styles*/
+nav ul li {
+    display: block;
+    
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    font-family: 'Blinker', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    margin: 10px;
+    background: #3570B3;
+    color: #A5B35B;
+    padding: 0.25rem;
+}
+
+button:hover {
+    background: #35475E;
+    color: #328C1E;
+}
+
+/*Link styles*/
+a {
+    color: #328C1E;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #35475E;
+}
+
+hr { 
+    border-top: 1px solid  #1446B3;
+    width: 80%;
+}
+
+figcaption {
+    font-family: 'Blinker', sans-serif;
+    font-size: 0.5rem;
+    text-align: left;
+}
+
+/*Container Width*/
+.container {
+    width: 80%;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    margin-bottom: 0;
+    background: #3570B3;
+    color: #fff;
+    font-family: 'Blinker', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: #A5B35B;
+    padding: 0.75rem;
+    
+}
+
+i {
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #A5B35B;
+}
+
+i:hover {
+    color: #35475E;
+}
+/*Media Queries*/
+
+/*Tablet*/
+@media all and (min-width: 35rem) {
+    
+    /*Grid*/
+    .port,
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 2rem;
+        padding-top: 1.5rem;
+        align-content: center;
+    }
+
+    .grid:nth-child(1n + 3) {
+        transform: translateY(-50%);
+    }
+
+    /*General Styling*/
+    h1 {  
+        font-size: 6rem;    
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+     }
+   
+    /*Nav styles*/
+    
+    nav ul li {
+        display: inline-block;
+        text-align: center;
+        width: 48%;
+    }
+    
+    hr { 
+    width: 90%;
+    }
+    
+    figcaption {
+    font-size: 0.75rem;
+    }
+
+}
+
+/*Desktop*/
+@media all and (min-width: 60rem) {
+
+    /*Grid*/
+   .port {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.25rem;
+    padding-top: 1.5rem;
+  }
+  
+  .portfigure:nth-child(2n + 4) {
+    transform: translateY(0);
+  }
+    
+    /* General Styling */
+     h1 {  
+        font-size: 8rem;    
+    }
+    
+    p {
+    font-size: 1.25rem; 
+    line-height: 1.6;
+    }
+    
+    figcaption {
+    font-size: 1rem;
+    }
+    nav ul li  {
+        width: 25%;
+    }
+    button {
+        font-size: 2rem;
+        
+    }
+  
+}
+
+    
+    
